@@ -3,18 +3,29 @@
 
 ### Getting Started
 
-To generate Allure Report you should perform following steps:
+To run all tests:
+
+```mvn clean test``` 
+
+
+To generate Allure Report:
 
 ```bash
-$ git clone git@github.com:allure-examples/allure-testng-example.git
 $ ./mvnw clean test site
 ```
 
-Report will be generated to `target/site/allure-maven-plugin` folder. To open the report you can use the following command:
+The report will be generated to `target/site/allure-maven-plugin` folder. To open the report you can use the following command:
 
 ```bash
 $ ./mvnw io.qameta.allure:allure-maven:serve
 ```
+
+## Known issues / TODOs
+
+- figure out how to generate report without mavenw (wrapper) 
+- change code so that test classes don't need to end with xyzTest
+
+
 
 ### More
 
