@@ -1,10 +1,11 @@
-package my.company;
+package simple;
 
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.TestBase;
 
-public class BrowserTest extends TestBase{
+public class BrowserTest extends TestBase {
 
     @Test(description = "opening axa website")
     public void simpleTest() {

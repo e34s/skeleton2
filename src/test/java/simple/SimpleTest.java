@@ -1,4 +1,4 @@
-package my.company;
+package simple;
 
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Issue;
