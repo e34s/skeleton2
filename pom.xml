@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>io.qameta.allure</groupId>
-    <artifactId>allure-testng-example</artifactId>
+    <artifactId>axa-allure-testng-example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
