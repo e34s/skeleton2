@@ -19,8 +19,8 @@
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
 
-    <name>Allure TestNG Example</name>
-    <description>Allure TestNG Example</description>
+    <name>AXA Allure TestNG Skeleton</name>
+    <description>AXA Allure TestNG Skeleton</description>
 
     <dependencies>
         <dependency>
