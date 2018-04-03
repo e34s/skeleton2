@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import utils.MyListener;
 
 @Listeners(MyListener.class)
-public class ExtentTest {
+public class ExtentTestWithListener {
 
     @Test
     public void passedTest() {
