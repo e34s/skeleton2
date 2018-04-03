@@ -1,9 +1,6 @@
 package simple;
 
-import io.qameta.allure.Attachment;
-import io.qameta.allure.Issue;
-import io.qameta.allure.Step;
-import io.qameta.allure.TmsLink;
+import io.qameta.allure.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -71,10 +68,10 @@ public class SimpleTest {
     }
 
     @Test(dataProvider = "dataProvider")
-    @Issue("ALR-123")
-    @Issue("ALR-456")
     @Issue("ALR-789")
     @TmsLink("TMS-123")
+    @Feature("AXA super feature")
+    @Story("AXA Story1")
     public void parametrizedTest(int parameter) {
         assertThat(parameter, is(2));
     }
