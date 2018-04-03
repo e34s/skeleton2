@@ -13,9 +13,15 @@ To run a specific test class:
 
 To generate Allure Report:
 
-```bash
-$ ./mvnw clean test site
 ```
+mvnw clean test site
+
+OR
+
+mvn -Dtest=ClassName test site
+```
+
+
 
 The report will be generated to `target/site/allure-maven-plugin` folder. To open the report use the following command:
 
