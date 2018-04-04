@@ -18,7 +18,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-    public class MyListener implements ITestListener {
+    public class ExtentListener implements ITestListener {
         protected static WebDriver driver;
         protected static ExtentReports reports;
         protected static ExtentTest test;
