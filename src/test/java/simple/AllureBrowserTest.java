@@ -1,6 +1,8 @@
 package simple;
 
 import io.qameta.allure.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,10 +19,10 @@ public class AllureBrowserTest extends TestBase {
     @Description("verify page title after opening AXA homepage")
     public void simpleTest() {
 
-        EventFiringWebDriver driver = (EventFiringWebDriver) getDriver();
+        WebDriver driver = getDriver();
         driver.get("https://www.axa.ch");
         Assert.assertEquals(driver.getTitle(), "Private customers");
-        screenshot(driver);
+        screenshot((RemoteWebDriver) driver);
         driver.quit();
     }
 }
