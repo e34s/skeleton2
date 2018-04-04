@@ -8,7 +8,7 @@ import utils.TestBase;
 
 import static utils.Helpers.screenshot;
 
-public class BrowserTest extends TestBase {
+public class AllureBrowserTest extends TestBase {
 
     @Test(description = "opening axa website")
     @Severity(SeverityLevel.CRITICAL)
