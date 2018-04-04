@@ -30,7 +30,8 @@ public class TestBase {
 
             case "Windows 10":
                 System.setProperty("webdriver.gecko.driver","C:\\Users\\mpalotas\\IdeaProjects\\e34seleniumtraining\\resources\\geckodriver.exe");
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\mpalotas\\IdeaProjects\\e34seleniumtraining\\resources\\chromedriver.exe");
+//                System.setProperty("webdriver.chrome.driver", "C:\\Users\\mpalotas\\IdeaProjects\\e34seleniumtraining\\resources\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\mpalotas\\Desktop\\drivers\\chromedriver.exe");
                 break;
 
             default:
