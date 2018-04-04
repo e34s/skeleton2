@@ -42,7 +42,7 @@ public class TestBase {
 
     //Declare ThreadLocal Driver (ThreadLocalMap) for ThreadSafe Tests
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
-    protected static ThreadLocal<EventFiringWebDriver> firingWebDriver = new ThreadLocal<>();
+    //protected static ThreadLocal<EventFiringWebDriver> firingWebDriver = new ThreadLocal<>();
 
     @BeforeMethod
     @Parameters(value={"browser"})
@@ -69,7 +69,7 @@ public class TestBase {
         //driver.set(new RemoteWebDriver(new URL("https://vm-106.element34.net/wd/hub"), capability));
         driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        firingWebDriver.set(new EventFiringWebDriver(driver.get()));
+        //firingWebDriver.set(new EventFiringWebDriver(driver.get()));
         //EventListener listener = new EventListener(driver.get());
         //firingWebDriver.get().register(listener);
 
@@ -77,8 +77,8 @@ public class TestBase {
 
     public WebDriver getDriver() {
         //Get driver from ThreadLocalMap
-        //return driver.get();
-        return firingWebDriver.get();
+        return driver.get();
+        //return firingWebDriver.get();
     }
 
     @AfterMethod
