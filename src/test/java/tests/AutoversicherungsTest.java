@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -16,9 +17,7 @@ public class AutoversicherungsTest extends TestBase {
     @Test(dataProvider="datamap", dataProviderClass = ExcelAdapter.class)
     public void newTest(Map<Object, Object> map) throws InterruptedException {
 
-//        RemoteWebDriver driver = (RemoteWebDriver) getDriver();
-        EventFiringWebDriver driver = (EventFiringWebDriver) getDriver();
-
+        RemoteWebDriver driver = (RemoteWebDriver) getDriver();
 
         //Fahrzeugsuche
         FahrzeugsuchePage fahrzeugsuche = new FahrzeugsuchePage(driver);
